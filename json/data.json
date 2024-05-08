@@ -1,0 +1,128 @@
+{
+    "projects" : 
+    [
+        {
+            "id": 1,
+            "type" : "personal",
+            "title": "new-carrot-market",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2024 Apr",
+            "endDate" : "2024 May",
+            "github_link" : "https://github.com/racheljeong/new-carrot-market",
+            "notion_link" : "https://www.notion.so/da-som/_Brand-New-Carrot-Market-cab02946999f426ba1bf21e363771413",
+            "demo" : "",
+            "env" : ["javascript", "typescript", "React.js", "Next.js 14","tailwind css", "sqlite", "prisma"]
+        },
+        {
+            "id": 2,
+            "type" : "personal",
+            "title": "newyork-times-2024",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2024 Apr",
+            "endDate" : "2024 May",
+            "github_link" : "https://github.com/racheljeong/newyork-times-2024",
+            "notion_link" : "https://www.notion.so/da-som/NewYork-Times-2024-9da5fc6daa814a72b1597f3cb1c85196",
+            "demo" : "",
+            "env" : ["javascript", "typescript", "React.js", "Next.js 14","tailwind css"]
+        },
+        {
+            "id": 3,
+            "type" : "personal",
+            "title": "naflix",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2024 Apr",
+            "endDate" : "2024 Apr",
+            "github_link" : "https://github.com/racheljeong/naflix",
+            "notion_link" : "",
+            "demo" : "",
+            "env" : ["javascript", "typescript", "React.js", "Next.js 14","tailwind css"]
+        },
+        {
+            "id": 4,
+            "type" : "personal",
+            "title": "pomodoro",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2024 Feb",
+            "endDate" : "2024 Feb",
+            "github_link" : "https://github.com/racheljeong/pomodoro",
+            "notion_link" : "https://www.notion.so/da-som/_POMODORO-aa052a2c3cec485c99f7210f6c56983e",
+            "demo" : "",
+            "env" : ["javascript", "typescript", "React.js", "Next.js 14","tailwind css"]
+        },
+        {
+            "id": 5,
+            "type" : "personal",
+            "title": "disney-routing-app",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2024 Feb",
+            "endDate" : "2024 Mar",
+            "github_link" : "https://github.com/racheljeong/disney_routing_app",
+            "notion_link" : "https://www.notion.so/da-som/_-Disney-Routing_2-d960c45db73a454f82671762caf96aa4",
+            "demo" : "",
+            "env" : ["javascript", "typescript", "React.js", "Next.js 14","tailwind css"]
+        },
+        {
+            "id": 6,
+            "type" : "personal",
+            "title": "mini-twitter",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2023 Dec",
+            "endDate" : "2024 Jan",
+            "github_link" : "https://github.com/racheljeong/mini_twitter",
+            "notion_link" : "",
+            "demo" : "",
+            "env" : ["javascript", "typescript", "React.js", "Next.js 12", "SWR", "tailwind css", "sqlite", "prisma"]
+        },
+    
+        {
+            "id": 7,
+            "type" : "work",
+            "title": "NH 농협 마이데이터 고도화 프로젝트",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2022 Jul",
+            "endDate" : "2023 Mar",
+            "github_link" : "",
+            "notion_link" : "",
+            "demo" : "",
+            "env" : ["javascript", "jQuery", "HTML/CSS", "Spring Framework", "Eclipse(nexcore)", "SVN"]
+        },
+        {
+            "id": 8,
+            "type" : "work",
+            "title": "NH 농협 마이데이터 사설 인증서 도입",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2022 Mar",
+            "endDate" : "2022 Mar",
+            "github_link" : "",
+            "notion_link" : "",
+            "demo" : "",
+            "env" : ["javascript", "jQuery", "HTML/CSS", "Spring Framework", "Eclipse(nexcore)", "SVN"]
+        },
+        {
+            "id": 9,
+            "type" : "work",
+            "title": "NH농협 마이데이터 플랫폼 구축",
+            "description": "",
+            "thumbnail": "/",
+            "startingDate" : "2021 Sep",
+            "endDate" : "2022 Mar",
+            "github_link" : "",
+            "notion_link" : "",
+            "demo" : "",
+            "env" : ["javascript", "jQuery", "HTML/CSS", "Spring Framework", "Eclipse(nexcore)", "SVN"]
+        }
+    
+    
+    
+       
+    
+    ]
+}
