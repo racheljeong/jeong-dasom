@@ -1,6 +1,8 @@
 'use client';
 
 import useSWR from 'swr'; // 기본 가져오기
+import Loading from '../components/Loading';
+import ProjectList from '../components/ProjectList';
 
 
 interface ProjectProps {
@@ -32,14 +34,18 @@ export const fetcher = (url : string) => fetch(url).then((response) => response.
 export default function Projects() {
     //const data = getDate();
     //console.log(`data`,data);
-    const {data, error, mutate} = useSWR('/api/staticdata', fetcher);
-    console.log(data);
-//  /api/staticdata 500
-//  /pages/api/staticdata 404
+    const {data, error, isLoading} = useSWR('/api/staticdata', fetcher);
+    // if(!isLoading || !error){
+    //     console.log('got this')
+    //     const results = data.projects;
+    //     console.log(results);
+    // }
 
         return (
 
-            <div>hi</div>
+            <div>
+                {(isLoading || error)? <Loading /> : <ProjectList data={data.projects}/>}
+            </div>
          );
 
 }
