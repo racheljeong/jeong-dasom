@@ -10,19 +10,19 @@ import { ReactHTMLElement } from "react";
 
 
 
-const Col = styled.div`
-  display: flex;
-  align-items: center;
-`;
+// const Col = styled.div`
+//   display: flex;
+//   align-items: center;
+// `;
 
-const Items = styled.ul`
-  display: flex;
-  align-items: center;
-`;
+// const Items = styled.ul`
+//   display: flex;
+//   align-items: center;
+// `;
 
 const Item = styled.li`
   margin-right: 20px;
-  font-size: 16px;
+  font-size: 21px;
   text-decoration: solid;
   font-family: auto;
   color: ${props => props.theme.textColor};
@@ -33,7 +33,9 @@ const Item = styled.li`
   flex-direction: column;
   &:hover {
     color: whitesmoke;
+    text-shadow: 3px 3px 4px "#95afc0";
     scale : 1.2;
+    transition: 0.2s;
   }
 `;
 
@@ -54,27 +56,20 @@ export default function Header() {
     const path = usePathname();
 
     return(
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <div className="fixed left-0 top-0 flex w-full justify-center text-lg text-whitesmoke border-b border-gray-300 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-        <Col>
-        <Items>
-            <Item>
-                <Link href ="/contact" >Contact{path === "/contact" && <Circle layoutId="circle"/>}</Link>
-            </Item>
-            <Item>
-                <Link href ="/about">About{path === "/about" && <Circle layoutId="circle"/>}</Link>
-            </Item>
-            <Item>
-                <Link href ="/projects">Projects{path === "/projects" && <Circle layoutId="circle"/>}</Link>
-            </Item>
-        </Items>
-        </Col>
-        <Col>
-         <Items>
-            Jeong Dasom
-          </Items>
-        </Col>
+      <div className="z-10 w-full fixed items-center justify-between text-lg text-whitesmoke 
+                      font-mono py-7 px-5 border-b border-gray-300 lg:flex">
+          <ul className="flex align-middle">
+              <Item>
+                  <Link href ="/contact" >Contact{path === "/contact" && <Circle layoutId="circle"/>}</Link>
+              </Item>
+              <Item>
+                  <Link href ="/about">About{path === "/about" && <Circle layoutId="circle"/>}</Link>
+              </Item>
+              <Item>
+                  <Link href ="/projects">Projects{path === "/projects" && <Circle layoutId="circle"/>}</Link>
+              </Item>
+          </ul>
         </div>
-      </div>
+
     );
 }
