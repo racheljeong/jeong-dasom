@@ -2,7 +2,7 @@
 
 import useSWR from 'swr'; // 기본 가져오기
 import Loading from '../components/Loading';
-import { Wrapper } from '../components/Common';
+import { Container, Wrapper } from '../components/Common';
 import { ProjectList } from '../components/ProjectList';
 
 
@@ -44,9 +44,9 @@ export default function Projects() {
 
         return (
 
-            <Wrapper>
+            <Container>
                 {(isLoading || error)? <Loading /> : <ProjectList data={data.projects}/>}
-            </Wrapper>
+            </Container>
          );
 
 }

@@ -27,15 +27,24 @@ export const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr); // 두 개의 열로 구성
   gap: 20px;
+  top: -100px;
 `;
 
 export const ProjectCard = styled(motion.div)`
-  background: white;
+  background: #f1f2f6;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   padding: 20px;
+`;
+
+export const ProjectTitle = styled.h1`
+  text-align: center;
+  font-size: large;
+  color: #95afc0;
+  //color: 1px 1px 2px #95afc0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 `;
 
 export const ProjectInfo = styled.div`
@@ -58,7 +67,7 @@ export const Modal = styled(motion.div)`
 export function ProjectList ({ data } : { data: ProjectProps[]}) {
 
   const [selectedProject, setSelectedProject] = useState<ProjectProps | null>(null);
-
+  //const clickedProject = 
   return (
     <>
       <ProjectGrid>
@@ -67,8 +76,8 @@ export function ProjectList ({ data } : { data: ProjectProps[]}) {
             key={project.id}
             onClick={() => setSelectedProject(project)}
             whileHover={{ scale: 1.05 }}
-          >s
-            <h3>{project.title}</h3>
+          >
+            <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectInfo>{project.description}</ProjectInfo>
           </ProjectCard>
         ))}

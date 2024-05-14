@@ -7,6 +7,17 @@ export const Wrapper = styled.div`
   padding: 20px;
 `;
 
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+`;
+
 
 export const Banner = styled.div<{ $bgphoto: string }>`                                                                                                                                                                                                                                                                                                                                                                           
   height: 100vh;

@@ -63,7 +63,7 @@ export default function Header() {
                   <Link href ="/contact" >Contact{path === "/contact" && <Circle layoutId="circle"/>}</Link>
               </Item>
               <Item>
-                  <Link href ="/about">About{path === "/about" && <Circle layoutId="circle"/>}</Link>
+                  <Link href ="/works">Works{path === "/works" && <Circle layoutId="circle"/>}</Link>
               </Item>
               <Item>
                   <Link href ="/projects">Projects{path === "/projects" && <Circle layoutId="circle"/>}</Link>
