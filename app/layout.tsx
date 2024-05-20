@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Afacad } from "next/font/google";
+import { Aleo } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 
-const afacad = Afacad({ subsets: ["latin"] , weight: ["400"] });
+const aAleo = Aleo({ weight: ["500"], preload : false }); // subsets: ["latin"] ,
 
 export const metadata: Metadata = {
   title: "Jeong Dasom",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={afacad.className}>
+      <body className={aAleo.className}>
         <Header/>
         {children}
         <Footer/>

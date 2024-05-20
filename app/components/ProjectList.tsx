@@ -4,9 +4,13 @@ import styled from "styled-components";
 import useSWR from "swr";
 import Loading from "../components/Loading";
 
+type typeProps = {
+  type : "personal" | "work"
+}
+
 interface ProjectProps {
   id: number;
-  type: string;
+  type: typeProps;
   title: string;
   description: string;
   thumbnail: string;
@@ -47,9 +51,18 @@ export const ProjectTitle = styled.h1`
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 `;
 
+export const InfoDate = styled.p`
+  color: #192a56;
+`;
+
+export const InfoLink = styled.p`
+  color: #4834d4;
+`;
+
+
 export const ProjectInfo = styled.div`
-  opacity: 0;
-  transition: opacity 0.3s;
+  //opacity: 0;
+  //transition: opacity 0.3s;
 `;
 
 export const Modal = styled(motion.div)`
@@ -65,9 +78,9 @@ export const Modal = styled(motion.div)`
 `;
 
 export function ProjectList ({ data } : { data: ProjectProps[]}) {
-
+  console.log(data);
   const [selectedProject, setSelectedProject] = useState<ProjectProps | null>(null);
-  //const clickedProject = 
+  
   return (
     <>
       <ProjectGrid>
@@ -78,7 +91,13 @@ export function ProjectList ({ data } : { data: ProjectProps[]}) {
             whileHover={{ scale: 1.05 }}
           >
             <ProjectTitle>{project.title}</ProjectTitle>
-            <ProjectInfo>{project.description}</ProjectInfo>
+            <ProjectInfo>
+              {project.description}
+              <InfoDate>{project.startingDate} ~ {project.endDate}</InfoDate>
+              <InfoLink>{project.github_link}</InfoLink>
+              <InfoLink>{project.notion_link}</InfoLink>
+                          
+            </ProjectInfo>
           </ProjectCard>
         ))}
       </ProjectGrid>

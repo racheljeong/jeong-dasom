@@ -1,5 +1,5 @@
 {
-    "projects" : 
+    "personalProjects" : 
     [
         {
             "id": 1,
@@ -7,8 +7,8 @@
             "title": "new-carrot-market",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2024 Apr",
-            "endDate" : "2024 May",
+            "startingDate" : "2024 04",
+            "endDate" : "2024 05",
             "github_link" : "https://github.com/racheljeong/new-carrot-market",
             "notion_link" : "https://www.notion.so/da-som/_Brand-New-Carrot-Market-cab02946999f426ba1bf21e363771413",
             "demo" : "",
@@ -20,8 +20,8 @@
             "title": "newyork-times-2024",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2024 Apr",
-            "endDate" : "2024 May",
+            "startingDate" : "2024 04",
+            "endDate" : "2024 04",
             "github_link" : "https://github.com/racheljeong/newyork-times-2024",
             "notion_link" : "https://www.notion.so/da-som/NewYork-Times-2024-9da5fc6daa814a72b1597f3cb1c85196",
             "demo" : "",
@@ -33,8 +33,8 @@
             "title": "naflix",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2024 Apr",
-            "endDate" : "2024 Apr",
+            "startingDate" : "2024 03",
+            "endDate" : "2024 04",
             "github_link" : "https://github.com/racheljeong/naflix",
             "notion_link" : "",
             "demo" : "",
@@ -46,8 +46,8 @@
             "title": "pomodoro",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2024 Feb",
-            "endDate" : "2024 Feb",
+            "startingDate" : "2024 02",
+            "endDate" : "2024 02",
             "github_link" : "https://github.com/racheljeong/pomodoro",
             "notion_link" : "https://www.notion.so/da-som/_POMODORO-aa052a2c3cec485c99f7210f6c56983e",
             "demo" : "",
@@ -59,8 +59,8 @@
             "title": "disney-routing-app",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2024 Feb",
-            "endDate" : "2024 Mar",
+            "startingDate" : "2024 02",
+            "endDate" : "2024 03",
             "github_link" : "https://github.com/racheljeong/disney_routing_app",
             "notion_link" : "https://www.notion.so/da-som/_-Disney-Routing_2-d960c45db73a454f82671762caf96aa4",
             "demo" : "",
@@ -72,22 +72,25 @@
             "title": "mini-twitter",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2023 Dec",
-            "endDate" : "2024 Jan",
+            "startingDate" : "2023 12",
+            "endDate" : "2024 01",
             "github_link" : "https://github.com/racheljeong/mini_twitter",
             "notion_link" : "",
             "demo" : "",
             "env" : ["javascript", "typescript", "React.js", "Next.js 12", "SWR", "tailwind css", "sqlite", "prisma"]
-        },
-    
+        }
+
+    ],
+"workProjects" : 
+    [
         {
             "id": 7,
             "type" : "work",
             "title": "NH 농협 마이데이터 고도화 프로젝트",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2022 Jul",
-            "endDate" : "2023 Mar",
+            "startingDate" : "2022 07",
+            "endDate" : "2023 03",
             "github_link" : "",
             "notion_link" : "",
             "demo" : "",
@@ -99,8 +102,8 @@
             "title": "NH 농협 마이데이터 사설 인증서 도입",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2022 Mar",
-            "endDate" : "2022 Mar",
+            "startingDate" : "2022 03",
+            "endDate" : "2022 03",
             "github_link" : "",
             "notion_link" : "",
             "demo" : "",
@@ -112,17 +115,14 @@
             "title": "NH농협 마이데이터 플랫폼 구축",
             "description": "",
             "thumbnail": "/",
-            "startingDate" : "2021 Sep",
-            "endDate" : "2022 Mar",
+            "startingDate" : "2021 09",
+            "endDate" : "2022 03",
             "github_link" : "",
             "notion_link" : "",
             "demo" : "",
             "env" : ["javascript", "jQuery", "HTML/CSS", "Spring Framework", "Eclipse(nexcore)", "SVN"]
         }
-    
-    
-    
        
-    
     ]
+
 }

@@ -5,20 +5,24 @@ import Loading from '../components/Loading';
 import { Container, Wrapper } from '../components/Common';
 import { ProjectList } from '../components/ProjectList';
 
+// type typeProps = {
+//     type : "personal" | "work"
+//   }
+  
 
-interface ProjectProps {
-    id : number,
-    type : string,
-    title : string,
-    description : string,
-    thumbnail : string,
-    startingDate : string,
-    endDate : string,
-    github_link? : string,
-    notion_link? : string,
-    demo? : string,
-    env : string[]
-}
+// interface ProjectProps {
+//     id : number,
+//     type : string,
+//     title : string,
+//     description : string,
+//     thumbnail : string,
+//     startingDate : string,
+//     endDate : string,
+//     github_link? : string,
+//     notion_link? : string,
+//     demo? : string,
+//     env : string[]
+// }
 
 
 // function getDate() {
@@ -33,19 +37,13 @@ export const fetcher = (url : string) => fetch(url).then((response) => response.
 
 
 export default function Projects() {
-    //const data = getDate();
-    //console.log(`data`,data);
+
     const {data, error, isLoading} = useSWR('/api/staticdata', fetcher);
-    // if(!isLoading || !error){
-    //     console.log('got this')
-    //     const results = data.projects;
-    //     console.log(results);
-    // }
 
         return (
 
             <Container>
-                {(isLoading || error)? <Loading /> : <ProjectList data={data.projects}/>}
+                {(isLoading || error)? <Loading /> : <ProjectList data={data.personalProjects}/>}
             </Container>
          );
 
