@@ -65,6 +65,10 @@ export const ProjectInfo = styled.div`
   //transition: opacity 0.3s;
 `;
 
+export const InfoEnv = styled.div`
+  color: #95afc0;
+`;
+
 export const Modal = styled(motion.div)`
   position: fixed;
   top: 0;
@@ -94,12 +98,15 @@ export function ProjectList ({ data } : { data: ProjectProps[]}) {
             <ProjectInfo>
               {project.description}
               <InfoDate>{project.startingDate} ~ {project.endDate}</InfoDate>
-              <InfoLink>{project.github_link}</InfoLink>
-              <InfoLink>{project.notion_link}</InfoLink>
-                          
+              <InfoLink>Github : {project.github_link}</InfoLink>
+              <InfoLink>Notion/Blog : {project.notion_link}</InfoLink>
+              <InfoEnv>{project.env.map((e)=> (
+                <span className="p-2 m-1 rounded-lg bg-whitesmoke text-mainPurple1 border border-blueGray">{e}</span>
+              ))}</InfoEnv>            
             </ProjectInfo>
           </ProjectCard>
         ))}
+
       </ProjectGrid>
       <AnimatePresence>
         {selectedProject && (
